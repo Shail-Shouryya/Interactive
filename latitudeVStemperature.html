@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude vs. Maximum Temperature</title>
+  <!--<link rel="stylesheet" href="style.css">-->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body 
+            {
+            background-color:black;
+            color:white;
+            }
+        </style>
+</head>
+
+
+<body>
+    <div class="box-set">
+    <div class="container-fluid">
+    
+    
+        <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="./home.html"><span class="latitude">Latitude</a>
+            </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                    <div class="dropdown">
+                        <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">Plots
+                            <span class="caret"></span></button> 
+                            <ul class="dropdown-menu">
+                                <li><a href="latitudeVStemperature.html">Maximum Temperature</a></li>
+                                <li><a href="latitudeVShumidity.html">Humidity</a></li>
+                                <li><a href="latitudeVScloudiness.html">Cloudiness</a></li>
+                                <li><a href="latitudeVSwindspeeds.html">Wind Speed</a></li>
+                            </ul>
+                    </div>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="dataComparisons.html"><span class="c-d">Comparison</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="citiesWeather_df.html"><span class="c-d">Data</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+
+                    
+                    
+        <div class="content">
+            <div class="container-fluid">
+            <div class="row">
+            
+            <div class="col-sm-12 col-md-8">
+                <div class="box">
+                <div class="header">
+                    <h1 class="title">Latitude versus Maximum Temperature</h1>
+                </div>
+                    <div class="content">
+                        <img src="latitudeVStemperature.png" alt="Latitude vs. Maximum Temperature" class="img-responsive">
+	                    <p class="category">
+                        The data visualized from the city latitude and temperature data indicate the latitude of the city does indeed affect the maximum temperature. There is a clear correlation between high temperatures and cities with a latitude near the equator (0 degrees), with the maximum temperature decreasing as we move away from the equator.
+                        </p>
+                        <p>
+                        Therefore, the temperature data came out as expected, with a spike in temperatures between the latitudes of 0 degrees and 25 degrees. This is reasonable, since the northern hemisphere was in its summer season at the time of the data analysis, so it makes sense that the temperature in cities in that region of the world are higher than in the rest of the world.
+	                    </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-4">
+            <div class="box">
+                <div class="page-header">
+                    <h1 class="title">Visualizations</h1>
+                </div>
+                
+                <div class="box">
+                <span class="border border-"></span>
+                    <a href="latitudeVStemperature.html"><img src="latitudeVStemperature.png" alt="Latitude vs. Maximum Temperature" width=49%></a>
+                    <a href="latitudeVShumidity.html"><img src="latitudeVShumidity.png" alt="Latitude vs. Humidity" width=49%></a>
+                    <a href="latitudeVScloudiness.html"><img src="latitudeVScloudiness.png" alt="Latitude vs. Cloudiness" width=49%></a>
+                    <a href="latitudeVSwindspeeds.html"><img src="latitudeVSwindspeeds.png" alt="Latitude vs. Wind Speed" width=49%></a>
+                </div>
+            </div>
+            </div>
+            
+            </div>
+            </div>
+        </div>
+        
+        
+    </div>
+    </div>
+</body>
+
+</html>
